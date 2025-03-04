@@ -1,0 +1,129 @@
+<!--
+This is a blog that will be updated with new content every week about the tech industry, programming, and other topics.
+we will be using HTML, CSS, and JavaScript to create this blog.
+We will be using the following layout for the blog:
+1. Header: This will contain the logo, nav bar, and search bar.
+2. hero: This will contain the main image and the title of the blog, CTA Button(Explore Blog).
+3. Main content area: image related to each blog post, title, date, author, and a short description,a read more button.
+4. Footer: This will contain the logo, social media links, and contact information.
+5. an about section that will contain a short description of the blog(this section will have a form that will allow users to subscribe to the blog).
+6. The blog will have a responsive design that will work on all devices.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NingenNoKodo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Workbench:SCAN@-53..100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header with logo, nav bar, search bar-->
+    <header>
+        <div class="logo">
+            <h1>NingenNoKodo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Hero with main image, title, and CTA Button-->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NingenNoKodo Blog</h1>
+            <p>Stay updated with the latest tech news, programming tutorials, and more.</p>
+            <button>Explore Blog</button>
+        </div>
+    </section>
+    <!--End of Hero-->
+
+    <!--Main content area with image, title, date, author, and short description-->
+    <section class="main-content">
+        <div class="blog-post">
+            <img src="images/blog1.jpg" alt="Blog Post 1">
+            <h2>Blog Post Title 1</h2>
+            <p>Published on: <span>May 1, 2021</span></p>
+            <p>Author: <span>John Doe</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+            <button>Read More</button>
+        </div>
+        <div class="blog-post">
+            <img src="images/blog2.jpg" alt="Blog Post 2">
+            <h2>Blog Post Title 2</h2>
+            <p>Published on: <span>May 8, 2021</span></p>
+            <p>Author: <span>Jane Doe</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+            <button>Read More</button>
+        </div>
+        <div class="blog-post">
+            <img src="images/blog3.jpg" alt="Blog Post 3">
+            <h2>Blog Post Title 3</h2>
+            <p>Published on: <span>May 15, 2021</span></p>
+            <p>Author: <span>John Smith</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+    <!--End of Main content area-->
+
+    <!--About section with a short description of the blog-->
+    <section class="about">
+        <h2>About NingenNoKodo Blog</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+            Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+            Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+            Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+
+        <!--Form to allow users to subscribe to the blog-->
+        <form>
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit" class="subscribe-button">Subscribe</button>
+            <br>
+
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <br>
+        </form>
+    </section>
+    <!--End of About section-->
+
+    <!--Footer with logo, social media links, and contact information-->
+    <footer>
+        <div class="footer-logo">
+            <h1>NingenNoKodo</h1>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="contact-info">
+            <p>Email: achillemutombo5@gmail.com</p>
+            <p>Phone: +27 792998180</p>
+        </div>
+        <div>
+            <p>&copy; 2021 NingenNoKodo. All Rights Reserved.</p>
+            <p>In Colaboration with <i>Zenith.Coder</i></p>
+        </div>
+    </footer>
+    <!--End of Footer-->
+</body>
+</html>
